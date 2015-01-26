@@ -44,7 +44,7 @@ var createNewTester = function ($) {
     createNewTest.asyncTest("All headers and records shown", function () {
         var callback = function (createNewPage) {
             jqUnit.assertEquals("Number of headers shown:", 3, createNewPage.locate("categoryHeader").length);
-            jqUnit.assertEquals("Number of records shown ", 9, $(".csc-createNew-recordRadio", createNewPage.container).length);
+            jqUnit.assertEquals("Number of records shown ", 10, $(".csc-createNew-recordRadio", createNewPage.container).length);
             //styling:
             assertStyling(createNewPage, createNewPage.options.styles.totalOf3);
             start();
@@ -56,6 +56,7 @@ var createNewTester = function ($) {
     fluid.model.copyModel(lessPermissions, cspace.tests.sampleUserPerms);
     lessPermissions.loanin = [];
     lessPermissions.movement = [];
+    lessPermissions.presentation = [];
     lessPermissions.conditioncheck = [];
     lessPermissions.intake = ["create", "read", "update", "delete", "list"];
     lessPermissions.valuationcontrol = [];
@@ -68,7 +69,7 @@ var createNewTester = function ($) {
     createNewTestLessPerms.asyncTest("Hiding Records", function () {
         var callback = function (createNewPage) {
             jqUnit.assertEquals("All headers shown:", 3, createNewPage.locate("categoryHeader").length);
-            jqUnit.assertEquals("Number of records shown ", 9, $(".csc-createNew-recordRadio", createNewPage.container).length);
+            jqUnit.assertEquals("Number of records shown ", 10, $(".csc-createNew-recordRadio", createNewPage.container).length);
             //acquisition:
             var str = createNewPage.options.parentBundle.messageBase.acquisition;
             jqUnit.assertTrue("Aquisition ("+str+") not shown", $('label:contains("'+str+'")').length < 1);
@@ -80,6 +81,8 @@ var createNewTester = function ($) {
             jqUnit.assertTrue("Intake ("+str+") shown", $('label:contains("'+str+'")').length == 1);
             str = createNewPage.options.parentBundle.messageBase.loanout;
             jqUnit.assertTrue("Loan out ("+str+") shown", $('label:contains("'+str+'")').length == 1);
+            str = createNewPage.options.parentBundle.messageBase.presentation;
+            jqUnit.assertTrue("Presentation ("+str+") not shown", $('label:contains("'+str+'")').length < 1);
             str = createNewPage.options.parentBundle.messageBase.conditioncheck;
             jqUnit.assertTrue("Condition Check ("+str+") not shown", $('label:contains("'+str+'")').length < 1);
             str = createNewPage.options.parentBundle.messageBase.valuationcontrol;
@@ -98,6 +101,7 @@ var createNewTester = function ($) {
     lessCategories.organization = [];
     lessCategories.place = [];
     lessCategories.work = [];
+    lessCategories.exhibition = [];
     lessCategories.concept = [];
     lessCategories.valuationcontrol = [];
     
@@ -135,6 +139,9 @@ var createNewTester = function ($) {
     lessCategories.person = [];
     lessCategories.loanout = [];
     lessCategories.loanin = [];
+    lessCategories.presentation = [];
+    lessCategories.conditioncheck = [];
+    lessCategories.valuationcontrol = [];
     lessCategories.movement = [];
     lessCategories.conditioncheck = [];
     lessCategories.media = [];

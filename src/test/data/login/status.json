@@ -55,6 +55,13 @@
             "delete",
             "list"
         ],
+        "exhibition": [
+            "create",
+            "read",
+            "update",
+            "delete",
+            "list"
+        ],
         "group": [
             "create",
             "read",
@@ -98,6 +105,27 @@
             "list"
         ],
         "loanout": [
+            "create",
+            "read",
+            "update",
+            "delete",
+            "list"
+        ],
+        "presentation": [
+            "create",
+            "read",
+            "update",
+            "delete",
+            "list"
+        ],
+        "conditioncheck": [
+            "create",
+            "read",
+            "update",
+            "delete",
+            "list"
+        ],
+        "valuationcontrol": [
             "create",
             "read",
             "update",

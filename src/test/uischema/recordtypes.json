@@ -25,6 +25,7 @@
         "default": [
           "loanin", 
           "loanout", 
+          "presentation", 
           "conditioncheck", 
           "acquisition", 
           "movement", 
@@ -57,7 +58,8 @@
           "place", 
           "tgn_place",
           "work",
-          "cona_work"
+          "cona_work",
+          "exhibition"
         ], 
         "type": "array"
       }

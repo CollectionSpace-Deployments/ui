@@ -31,6 +31,7 @@ cspace.tests.sampleSchema = {
                     "organization",
                     "place",
                     "work",
+                    "exhibition",
                     "concept"
                 ],
                 "type": "array"
@@ -46,6 +47,7 @@ cspace.tests.sampleSchema = {
                     "intake",
                     "loanin",
                     "loanout",
+                    "presentation",
                     "conditioncheck",
                     "acquisition",
                     "movement",
@@ -63,11 +65,13 @@ cspace.tests.sampleSchema = {
             "intake",
             "loanin",
             "loanout",
+            "presentation",
             "conditioncheck",
             "acquisition",
             "organization",
             "place",
             "work",
+            "exhibition",
             "concept",
             "cataloging",
             "movement",
@@ -277,6 +281,24 @@ cspace.tests.sampleSchema = {
                     }
                 },
                 "type": "object"
+            },
+            "exhibition": {
+                "properties": {
+                    "exhibition": {
+                        "properties": {
+                            "order": {
+                                "default": 0,
+                                "type": "integer"
+                            },
+                            "nptAllowed": {
+                                "default": true,
+                                "type": "boolean"
+            }
+        },
+        "type": "object"
+    }
+                },
+                "type": "object"
             }
         },
         "type": "object"
@@ -287,11 +309,15 @@ cspace.tests.sampleUserPerms = {
         "person": ["create", "read", "update", "delete", "list"],
         "loanout": ["create", "read", "update", "delete", "list"],
         "loanin": ["read", "list"],
+        "presentation": [],
+        "conditioncheck": [],
+        "valuationcontrol": [],
         "acquisition": [],
         "conditioncheck": [],
         "organization": ["create", "read", "update", "delete", "list"],
         "place": ["create", "read", "update", "delete", "list"],
         "work": ["create", "read", "update", "delete", "list"],
+        "exhibition": ["create", "read", "update", "delete", "list"],
         "concept": ["create", "read", "update", "delete", "list"],
         "movement": ["create", "read", "update", "delete", "list"],
         "cataloging": ["create", "read", "update", "delete", "list"],
@@ -306,6 +332,7 @@ cspace.tests.fullPerms = {
         "acquisition": ["create", "read", "update", "delete", "list"],
         "loanout": ["create", "read", "update", "delete", "list"],
         "loanin": ["create", "read", "update", "delete", "list"],
+        "presentation": ["create", "read", "update", "delete", "list"],
         "conditioncheck": ["create", "read", "update", "delete", "list"],
         "movement": ["create", "read", "update", "delete", "list"],
         "objectexit": ["create", "read", "update", "delete", "list"],
@@ -313,6 +340,7 @@ cspace.tests.fullPerms = {
         "organization": ["create", "read", "update", "delete", "list"],
         "place": ["create", "read", "update", "delete", "list"],
         "work": ["create", "read", "update", "delete", "list"],
+        "exhibition": ["create", "read", "update", "delete", "list"],
         "concept": ["create", "read", "update", "delete", "list"],
         "media": ["create", "read", "update", "delete", "list"],
         "users": ["create", "read", "update", "delete", "list"],
