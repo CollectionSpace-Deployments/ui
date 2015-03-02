@@ -10,6 +10,7 @@ login-rologin:
 login-rologin-pwd:
 login-rologin-pwdValue:
 acquisition-extentLabel: Extent
+
 work-genreLabel: Genre
 work-mediumLabel: Medium
 work-migratedEntityGroupLabel: Migrated Entity
@@ -18,3 +19,10 @@ work-migratedEntityTypeLabel: Entity Type
 media-isPrimaryLabel: Is Primary?
 media-isOriginalMediaLabel: Is Original Media?
 media-statusLabel: Status
+
+
+collection-object-administrativeRemarksLabel: Administrative Remarks
+collection-object-provenanceLabel: Provenance
+collection-object-initialCatalogingLabel: Initial Cataloging Completed
+collection-object-additionalResearchLabel: Additional Research Required
+collection-object-curatorApprovedLabel: Approved by Curator
