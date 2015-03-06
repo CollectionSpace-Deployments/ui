@@ -10,3 +10,8 @@ login-rologin:
 login-rologin-pwd:
 login-rologin-pwdValue:
 acquisition-extentLabel: Extent
+work-genreLabel: Genre
+work-mediumLabel: Medium
+work-migratedEntityGroupLabel: Migrated Entity
+work-migratedEntityLabel: Entity
+work-migratedEntityTypeLabel: Entity Type
