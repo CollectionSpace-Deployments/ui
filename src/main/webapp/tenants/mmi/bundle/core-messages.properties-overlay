@@ -15,3 +15,6 @@ work-mediumLabel: Medium
 work-migratedEntityGroupLabel: Migrated Entity
 work-migratedEntityLabel: Entity
 work-migratedEntityTypeLabel: Entity Type
+media-isPrimaryLabel: Is Primary?
+media-isOriginalMediaLabel: Is Original Media?
+media-statusLabel: Status
