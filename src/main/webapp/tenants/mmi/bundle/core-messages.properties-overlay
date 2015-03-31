@@ -34,12 +34,12 @@ collection-object-responsibleDepartmentLabel: Collection category
 collection-object-contentLanguageLabel: Language
 collection-object-contentPlaceLabel: Place
 collection-object-contentEntitiesGroupLabel: Content - Entities
-collection-object-contentEntityLabel: Content - Entity
-object-contentInformation-contentEntityTypeLabel: Content - Entity Type
+object-description-contentEntityLabel: Content - Entity
+object-description-contentEntityTypeLabel: Content - Entity Type
 collection-object-contentEntityNoteLabel: Content - Entity Note
 collection-object-contentWorkGroupLabel: Content - Works
-collection-object-contentWorkLabel: Content - Work
-collection-object-contentWorkTypeLabel: Content - Work Type
+object-description-contentWorkLabel: Content - Work
+object-description-contentWorkTypeLabel: Content - Work Type
 collection-object-contentWorkNoteLabel: Content - Work Note
 collection-object-copyrightStatementLabel: Copyright Statement
 collection-object-physicalDescriptionLabel: Format
