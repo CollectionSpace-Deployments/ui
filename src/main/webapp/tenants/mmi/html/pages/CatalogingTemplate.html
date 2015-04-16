@@ -139,7 +139,7 @@
                 <div class="label csc-collection-object-administrativeRemarks-label"></div>
             </div>
             <div class="content">
-                <input type="text" class="csc-collection-object-administrative-remarks"/>
+                <input type="text" class="csc-collection-object-administrativeRemarks"/>
             </div>
         </div>
         <div class="info-pair">
@@ -155,7 +155,7 @@
                 <div class="label csc-collection-object-initialCataloging-label"></div>
             </div>
             <div class="content">
-                <input type="checkbox" class="csc-collection-object-initial-cataloging"/>
+                <input type="checkbox" class="csc-collection-object-initialCataloging"/>
             </div>
         </div>
         <div class="info-pair">
@@ -163,7 +163,7 @@
                 <div class="label csc-collection-object-additionalResearch-label"></div>
             </div>
             <div class="content">
-                <input type="checkbox" class="csc-collection-object-additional-research"/>
+                <input type="checkbox" class="csc-collection-object-additionalResearch"/>
             </div>
         </div>
         <div class="info-pair">
@@ -171,7 +171,7 @@
                 <div class="label csc-collection-object-curatorApproved-label"></div>
             </div>
             <div class="content">
-                <input type="checkbox" class="csc-collection-object-curator-approved"/>
+                <input type="checkbox" class="csc-collection-object-curatorApproved"/>
             </div>
         </div>
 	</div>
@@ -272,10 +272,10 @@
 				</div>
                 <div class="info-pair">
                     <div class="header">
-                        <div class="label csc-collection-object-copyrightStatement-label"></div>
+                        <div class="label csc-collection-object-copyrightStatements-label"></div>
                     </div>
                     <div class="content">
-                        <input type="text" class="csc-object-description-copyright-statement"/>
+                        <input type="text" class="input-alpha csc-collection-object-copyrightStatement"/>
                     </div>
                 </div>
 			</div>
@@ -329,23 +329,23 @@
 								<div class="label csc-collection-object-contentEntitiesGroup-label"></div>
 							</div>
 							<div class="content">
-                                <table>
+                                <table >
                                     <thead>
                                         <tr>
-                                            <td class="label csc-object-information-contentEntity-label"></td>
-                                            <td class="label csc-object-information-contentEntityType-label"></td>
+                                            <td class="label csc-collection-object-contentEntity-label"></td>
+                                            <td class="label csc-collection-object-contentEntityType-label"></td>
                                             <td class="label csc-collection-object-contentEntityNote-label"></td>
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        <tr>
-                                            <td><input type="text" class="csc-object-information-content-entity"/></td>
+                                        <tr class="csc-collection-object-contentEntitiesGroup">
+                                            <td><input type="text" class="csc-collection-object-contentEntity"/></td>
                                             <td>
-                                                <select class="csc-object-information-content-entity-type input-select">
+                                                <select class="csc-collection-object-contentEntityType input-select">
                                                     <option value="">Options not loaded</option>
                                                 </select>
                                             </td>
-                                            <td><input type="text" class="csc-collection-object-content-entity-note"/></td>
+                                            <td><input type="text" class="csc-collection-object-contentEntityNote"/></td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -361,17 +361,17 @@
                                 <table>
                                     <thead>
                                     <tr>
-                                        <td class="csc-object-description-contentWork-label"></td>
-                                        <td class="csc-object-description-contentWorkType-label"></td>
+                                        <td class="csc-collection-object-contentWork-label"></td>
+                                        <td class="csc-collection-object-contentWorkType-label"></td>
                                         <td class="csc-collection-object-contentWorkNote-label"></td>
                                         <!--<td class="csc-collection-object-techniqueType-label"></td>-->
                                     </tr>
                                     </thead>
                                     <tbody>
-                                    <tr class="csc-collection-object-contentWorksGroup">
-                                        <td><input type="text" class="csc-object-description-content-work"/></td>
-                                        <td><select class="csc-object-description-content-work-type input-select"></select></td>
-                                        <td><input type="text" class="csc-collection-object-content-work-note"/></td>
+                                    <tr class="label csc-collection-object-contentWorkGroup">
+                                        <td><input type="text" class="csc-collection-object-contentWork"/></td>
+                                        <td><select class="csc-collection-object-contentWorkType input-select"><option value="">Options not loaded</option></select></td>
+                                        <td><input type="text" class="csc-collection-object-contentWorkNote"/></td>
                                         <!--<td><input type="text" class="csc-object-production-technique-type input-select"/></td></-->
                                     </tr>
                                     </tbody>
@@ -556,7 +556,7 @@
                     <div class="label csc-collection-object-historyNoteSources-label"></div>
                 </div>
                 <div class="content">
-                    <input type="text" class="csc-collection-object-history-note-sources" />
+                    <input type="text" class="csc-collection-object-historyNoteSources" />
                 </div>
             </div>
 		</div>
